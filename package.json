@@ -1,0 +1,37 @@
+{
+  "name": "openapi-editor",
+  "version": "0.0.1",
+  "description": "Adaptation of the Swagger-Editor for local files",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build . -t aomitayo/openapi-editor",
+    "edit": "docker run -ti --rm --volume=\"$(pwd)\":/openapi -p 3131:8080 aomitayo/openapi-editor",
+    "start": "./bin/openapi-editor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aomitayo/openapi-editor.git"
+  },
+  "keywords": [
+    "swagger",
+    "openapi",
+    "edit",
+    "local"
+  ],
+  "author": "Adedayo Omitayo <adedayo.omitayo@flowswift.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aomitayo/openapi-editor/issues"
+  },
+  "homepage": "https://github.com/Aomitayo/openapi-editor#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "swagger-editor-dist": "^3.5.1"
+  },
+  "bin": {
+    "openapi-editor": "bin/openapi-editor.js"
+  }
+}
