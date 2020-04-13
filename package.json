@@ -1,6 +1,6 @@
 {
-  "name": "openapi-editor",
-  "version": "0.0.1",
+  "name": "@aomitayo/openapi-editor",
+  "version": "0.1.0",
   "description": "Adaptation of the Swagger-Editor for local files",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "commander": "^2.9.0",
     "express": "^4.15.3",
     "path": "^0.12.7",
-    "swagger-editor-dist": "^3.5.1"
+    "swagger-editor-dist": "^3.8.0"
   },
   "bin": {
     "openapi-editor": "bin/openapi-editor.js"
